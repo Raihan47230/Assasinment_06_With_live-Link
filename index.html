@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+      <style>
+          /* Spinner styles */
+          #spinner {
+            display: none;
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-top: 4px solid #000;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+          }
+    
+          /* Spinner animation */
+          @keyframes spin {
+            0% {
+              transform: rotate(0deg);
+            }
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+        </style> 
+</head>
+<body>
+  
+          <!-- nav secation -->
+           <section class="w-11/12 mx-auto">
+               <nav class="flex justify-between mt-2 items-center">
+                    <div class="flex gap-2 items-center">
+                         <img class="h-4 w-4" src="images/Group 1.png" alt="">
+                         <p class="text-2xl font-bold">Peddy</p>
+                    </div>
+                   <div class="flex gap-3">
+                    <p>Home</p>
+                    <p>Shop</p>
+                    <p>Contact</p>
+                   </div>
+                   <div class="p-5 bg-gray-100 rounded-full"><img class="w-7 h-6 " src="https://img.icons8.com/?size=100&id=83190&format=png&color=000000" alt=""></div>
+               </nav>
+           </section>
+
+               <section class="mt-10 w-11/12 mx-auto">
+                    <div class="text-center">
+                    <p class="mb-3">Bringing Families Together ❤️‍🔥 </p>
+                    <h3 class="font-bold text-3xl mb-3 ">Your Path to Adoption <br> Starts Here</h3>
+                    <p class="mb-3 font-semibold">This project is a comprehensive Pet Shop Management System designed to streamline the operations of a pet store. It includes features for managing product <br> inventory, tracking sales, customer orders, pet adoptions, and supplier management..</p>
+                    <button id="viewDeatails" class="font-semibold text-xl px-4 py-2 bg-gradient-to-r from-orange-400 to-red-600 rounded-lg text-white">View More</button>
+                    </div>
+                         <div class="flex justify-center mt-6">
+                              <img class="" src="images/image.png" alt="">
+                              
+                         </div>
+                         <div class="text-center">
+                              <h5 class="text-3xl font-bold mb-4">Adopt  Your  Best Friend</h5>
+                         <p> Adopt Your Best Friend is a platform dedicated to connecting loving homes with pets in need of adoption. We partner with local shelters and <br> rescue organizations to help dogs, cats, and other animals find their forever families.</p>
+                         </div>
+               </section>
+               <nav  id="btn4"  class="w-11/12 mx-auto text-center mb-5 flex justify-between py-20"> </nav>
+                    <!-- main function -->
+                     <div class="flex gap-3 justify-between w-11/12 mx-auto mb-5">
+                         <h2 class="font-bold text-3xl">Best Deal For you</h2>
+                         <button id="SortPrice" class="font-bold text-xl bg-slate-400 py-3 px-6 rounded-2xl">Sort by Price</button>
+                     </div>
+                   
+                     <div id="spnner" class="text-center hidden mb-5 py-40">
+                      <span class="loading loading-dots loading-xs"></span>
+                        <span class="loading loading-dots loading-sm"></span>
+                        <span class="loading loading-dots loading-md"></span>
+                        <span class="loading loading-dots loading-lg"></span>                       
+                         
+                        </div>
+                   
+                    <section id="main-section" class="lg:flex w-11/12 mx-auto gap-7">
+                         <main id="allPhoto" class="lg:w-9/12 grid md:grid-cols-2 lg:grid-cols-3 gap-2"></main>
+                         <main id="allPhotos" class="hidden lg:w-9/12 grid md:grid-cols-2 lg:grid-cols-3 gap-2"></main>
+                         
+                        <div class=" border border-slate-50 lg:w-3/12 rounded-2xl bg-slate-100">
+                         <div id="photoShower" class="lg:w-full  bg-slate-100 rounded-lg  gap-3 grid grid-cols-2 border border-slate-200">  
+                         </div>
+                        </div>
+                    </section>
+
+                          <div id="customModal"> 
+                           </div>
+
+<div id="customModal2">
+
+</div>
+
+<!-- <footer></footer> -->
+     <footer class="footer bg-black text-neutral-content p-10 flex justify-between lg:px-40">
+  <nav>
+    <div class="footer-title flex gap-3">
+     <img src="images/Group 1.png" alt="">
+     <h2 class="text-2xl font-bold">Peddy</h2>
+     </div>
+    <a class="link link-hover">Location: av. Washington 165, NY CA </a>
+    <a class="link link-hover">54003</a>
+    <a class="link link-hover">Phone: +31 85 964 47 25</a>
+    <a class="link link-hover">Email: info@yourdomain.com</a>
+    <a class="link link-hover">Openings hours: 9.00 AM - 5.00 PM</a>
+    <div class="flex gap-5">
+     <img src="images/Group 2.png" alt="">
+     <img src="images/Vector (1).png" alt="">
+     <img src="images/Group 6.png" alt="">
+     <img src="images/Group 7.png" alt="">
+    </div>
+  </nav>
+  <nav>
+    <h6 class="footer-title font-bold text-2xl">Useful Links</h6>
+    <a class="link link-hover">Home</a>
+    <a class="link link-hover">About Us</a>
+    <a class="link link-hover">Animals</a>
+    <a class="link link-hover">Foundation</a>
+    <a class="link link-hover">Contact</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title font-bold text-2xl">Drop a Message</h6>
+    <input 
+  type="text"
+  placeholder="Enter your email"
+  class="input input-bordered input-primary w-full max-w-xs bg-slate-500 border-none outline-none" />
+  <button class="btn btn-success w-full">Secondary</button>
+   
+  </nav>
+</footer>
+
+     <script src="java.js"></script>
+</body>
+</html>
